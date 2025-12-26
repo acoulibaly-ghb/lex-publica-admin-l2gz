@@ -466,7 +466,7 @@ export const TextChat: React.FC<TextChatProps> = ({ courseContent, systemInstruc
             <button onClick={() => sendMessage("Expliquez-moi simplement la notion suivante :")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-blue-700 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-300 border border-blue-200 dark:border-blue-800 rounded-lg hover:bg-blue-100 transition-all whitespace-nowrap"><BookOpen size={14} /> Expliquez-moi...</button>
             <button onClick={() => sendMessage("Propose-moi un sujet de dissertation et un plan détaillé (I. II.) basé sur un ou plusieurs thèmes du cours que je vais t'indiquer.")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-indigo-700 bg-indigo-50 dark:bg-indigo-900/30 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 rounded-lg hover:bg-indigo-100 transition-all whitespace-nowrap"><BookOpen size={14} /> Plan Dissertation</button>
             <button onClick={() => sendMessage("Listez les arrêts liés à des définitions, SVP.")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-purple-700 bg-purple-50 dark:bg-purple-900/30 dark:text-purple-300 border border-purple-200 dark:border-purple-800 rounded-lg hover:bg-purple-100 transition-all whitespace-nowrap"><BookOpen size={14} /> Arrêts & définitions</button>
-            <button onClick={() => sendMessage("Listez les arrêts liés à des notions clés, SVP.")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-cyan-700 bg-cyan-50 dark:bg-cyan-900/30 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800 rounded-lg hover:bg-cyan-100 transition-all whitespace-nowrap"><BookOpen size={14} /> Arrêts & notions clés</button> 
+            <button onClick={() => sendMessage("Listez les arrêts liés à un ou plusieurs thèmes du cours que je vais vous indiquer.")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-cyan-700 bg-cyan-50 dark:bg-cyan-900/30 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800 rounded-lg hover:bg-cyan-100 transition-all whitespace-nowrap"><BookOpen size={14} /> Arrêts & notions clés</button> 
           </div>
           <div className="relative flex items-end gap-2 bg-slate-50 dark:bg-slate-800/50 p-2 rounded-2xl border-2 border-slate-200 dark:border-slate-700">
             <button onClick={() => fileInputRef.current?.click()} className="p-3 text-slate-400 hover:text-slate-600"><Paperclip size={24} /></button>
@@ -496,6 +496,7 @@ export const TextChat: React.FC<TextChatProps> = ({ courseContent, systemInstruc
     </div>
   );
 };
+
 
 
 
