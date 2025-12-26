@@ -460,8 +460,8 @@ export const TextChat: React.FC<TextChatProps> = ({ courseContent, systemInstruc
           )}
           <div className="flex gap-2 mb-4 overflow-x-auto pb-2 no-scrollbar px-1">
             <button onClick={() => sendMessage("Quel est mon bilan de progression ?")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-amber-700 bg-amber-50 dark:bg-amber-900/30 border border-amber-200 rounded-lg hover:bg-amber-100 transition-all whitespace-nowrap"><Trophy size={14} /> Ma progression</button>
-            <button onClick={() => sendMessage("Génère un QCM de 3 questions")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-blue-700 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 rounded-lg hover:bg-blue-100 transition-all whitespace-nowrap"><Search size={14} /> QCM</button>
-            <button onClick={() => sendMessage("Propose-moi 3 affirmations Vrai/Faux")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-rose-700 bg-rose-50 dark:bg-rose-900/30 border border-rose-200 rounded-lg hover:bg-rose-100 transition-all whitespace-nowrap"><BookOpen size={14} /> Vrai/Faux</button>
+            <button onClick={() => sendMessage("Génère un QCM de 3 questions sur un ou plusieurs thèmes du cours que je vais t'indiquer")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-blue-700 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 rounded-lg hover:bg-blue-100 transition-all whitespace-nowrap"><Search size={14} /> QCM</button>
+            <button onClick={() => sendMessage("Propose-moi 3 affirmations Vrai/Faux sur un ou plusieurs thèmes du cours que je vais t'indiquer")} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-rose-700 bg-rose-50 dark:bg-rose-900/30 border border-rose-200 rounded-lg hover:bg-rose-100 transition-all whitespace-nowrap"><BookOpen size={14} /> Vrai/Faux</button>
           </div>
           <div className="relative flex items-end gap-2 bg-slate-50 dark:bg-slate-800/50 p-2 rounded-2xl border-2 border-slate-200 dark:border-slate-700">
             <button onClick={() => fileInputRef.current?.click()} className="p-3 text-slate-400 hover:text-slate-600"><Paperclip size={24} /></button>
@@ -491,4 +491,5 @@ export const TextChat: React.FC<TextChatProps> = ({ courseContent, systemInstruc
     </div>
   );
 };
+
 
